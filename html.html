@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include ApexCharts CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Stock Dashboard</h1>
+        <div class="chart-container">
+            <!-- Chart will be rendered here -->
+            <div id="stockChart"></div>
+        </div>
+        <div class="stock-info">
+            <h2 id="stockName">Loading...</h2>
+            <p id="stockPrice">Price: $--.-- (--.--%)</p>
+            <p id="lastUpdated">Last updated: --:-- --</p>
+        </div>
+        <div class="suggestion">
+            <h3>Suggestion:</h3>
+            <p id="suggestionText">Loading suggestion...</p>
+        </div>
+        <div class="actions">
+            <button id="shareBtn">Share</button>
+            <button id="watchBtn">Watch</button>
+            <button id="updateBtn">Update</button>
+        </div>
+    </div>
+    <!-- Include ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Your custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
